@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>75 Misiones Mágicas</title>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+    s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '119211728144504');
+    fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=119211728144504&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background-color: #fff6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+
+  <header class="py-10 text-center">
+    <span class="bg-green-100 text-green-700 text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wide">
+      ✨ ¡Nueva experiencia interactiva + imprimible!
+    </span>
+
+    <h1 class="mt-6 text-4xl md:text-5xl font-extrabold text-pink-500 px-4">
+      ¡75 Misiones Mágicas en un solo clic!
+    </h1>
+
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto px-6">
+      Combina la magia digital con el aprendizaje en papel. Colorea, traza y juega desde cualquier dispositivo.
+    </p>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 pb-20">
+
+    <div class="grid md:grid-cols-2 gap-8 text-center md:text-left">
+      
+      <div class="card bg-white p-8 rounded-3xl shadow-sm border border-pink-100 flex flex-col md:flex-row items-center gap-4">
+        <span class="text-3xl">🎨</span>
+        <div>
+          <h3 class="font-bold text-pink-500 text-xl">Experiencia Digital Mágica</h3>
+          <p class="text-gray-600">Acceso a la App interactiva donde los dibujos cobran vida al tocarlos.</p>
+        </div>
+      </div>
+
+      <div class="card bg-white p-8 rounded-3xl shadow-sm border border-blue-100 flex flex-col md:flex-row items-center gap-4">
+        <span class="text-3xl">📚</span>
+        <div>
+          <h3 class="font-bold text-blue-500 text-xl">75 Misiones Imprimibles</h3>
+          <p class="text-gray-600">Descarga el cuaderno completo para fortalecer la motricidad fina.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-16 bg-pink-500 rounded-[3rem] p-12 text-center text-white shadow-2xl">
+      <h2 class="text-2xl font-bold mb-2">¿Listo para empezar la aventura?</h2>
+      
+      <div class="text-6xl font-bold mb-3">
+        $172.84 <span class="text-2xl align-middle">MXN</span>
+      </div>
+
+      <p class="text-sm opacity-90 mb-8">
+        * Precio total con IVA incluido
+      </p>
+
+      <!-- BOTÓN CORREGIDO -->
+      <a href="https://pay.hotmart.com/O105060314N"
+         onclick="fbq('track', 'InitiateCheckout', {value: 172.84, currency: 'MXN'});"
+         class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-black py-5 px-12 rounded-full text-2xl shadow-lg inline-block transition-all transform hover:scale-110">
+         ¡QUIERO MI CUADERNO!
+      </a>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
