@@ -97,9 +97,14 @@
         * Precio total con IVA incluido
       </p>
 
-      <!-- BOTÓN CORREGIDO -->
-      <a href="https://pay.hotmart.com/O105060314N"
-         onclick="fbq('track', 'InitiateCheckout', {value: 172.84, currency: 'MXN'});"
+      <!-- BOTÓN CORREGIDO (CON DELAY PARA PIXEL) -->
+      <a href="#"
+         onclick="
+           fbq('track', 'InitiateCheckout', {value: 172.84, currency: 'MXN'});
+           setTimeout(function(){
+             window.location.href='https://pay.hotmart.com/O105060314N';
+           }, 800);
+         "
          class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-black py-5 px-12 rounded-full text-2xl shadow-lg inline-block transition-all transform hover:scale-110">
          ¡QUIERO MI CUADERNO!
       </a>
